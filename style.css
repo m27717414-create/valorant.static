@@ -127,7 +127,7 @@ body{
     align-items: center;
 }
 
-.hero-content>h1{
+.hero-content> h1{
     /* font-family: sans-serif; */
     margin: 32px 0 64px;
     font-size: 20px;
@@ -137,7 +137,7 @@ body{
     font-family: fantasy;
 }
 
-.hero-content>button{
+.hero-content> button{
     padding: 18px 32px;
     background-color: #ff4655;
     color: #ece8e1;
@@ -146,7 +146,7 @@ body{
     cursor: pointer;
 }
 
-.hero-content>button:hover{
+.hero-content > button:hover{
     background-color: #ece8e1;
     color: black;
 }
@@ -156,7 +156,7 @@ body{
     padding: 60px;
 }
 
-.latest-container>header{
+.latest-container > header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,4 +171,192 @@ body{
 
 .latest-container p{
     font-weight: 600;
+}
+
+.card-container{
+    /* border: 10px solid black; */
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.card{
+    /* border: 1px solid black; */
+    min-height: 385px;
+    max-width: 400px;
+}
+
+.card>figure{
+    width: 100%;
+    height: 223px;
+    overflow: hidden;
+    position: relative;
+    /* border: 5px solid black; */
+}
+
+.card .sharelink{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    background-color: #0f192395;
+    border: 0.5px solid #2b2a29;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    transition: 0.5s;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card .category{
+    color: #2a2a2a;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.card .category > span{
+    color: #ff4655;
+}
+
+.card .title{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.card .description{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* NEW AGENT SECTION */
+
+.agent-container{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.agent-container>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.agent-content{
+    position: absolute;
+    /* border: 2px solid white; */
+    right: 5%;
+    top: 30%;
+    color: white;
+    /* letter-spacing: 0.08em; */
+}
+
+.agent-container > h1{
+    font-size: 80px;
+    font-family: fantasy;
+    margin-bottom: 10px
+}
+
+.agent-content > p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.agent-content > button{
+    background-color: #ff3c46;
+    color: white;
+    padding: 18px 32px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.agent-content>button:hover{
+    background-color: white;
+    color: red;
+}
+
+.gameplay-container{
+    height: 75vh;
+    width: 100%;
+    border: 2px solid black;
+    background-image: url("/assets/gameplay-bg.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gameplay-container > article{
+    width: 45%;
+    height: 80%;
+    /* border: 2px solid black; */
+}
+
+.gameplay-content > button{
+    background-color: #ff3c46;
+    color: white;
+    padding: 18px 32px;
+    border: none;
+    margin-top: 25px;
+}
+.gameplay-video-container>video{
+    height: 100%;
+    width: 100%;
+}
+
+.gameplay-content{
+    padding: 8PX;
+}
+
+.gameplay-content>h1{
+    font-size: 80px;
+    font-family: fantasy;
+    margin-bottom: 16px;
+}
+
+.gameplay-content>p{
+    font-size: 14px;
+    color: #0f1923;
+}
+
+.your-agent-container{
+    height: 90vh;
+    width: 100%;
+    background-image: url("/assets/yourAgent.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.your-agent-container > article{
+    width: 45%;
+    height: 90%;
+    border: 2px solid black;
+}
+
+.your-agent-image-container>img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
