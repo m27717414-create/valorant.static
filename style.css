@@ -295,7 +295,7 @@ body{
 .gameplay-container{
     height: 75vh;
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-image: url("/assets/gameplay-bg.png");
     background-position: center;
     background-size: contain;
@@ -317,13 +317,18 @@ body{
     border: none;
     margin-top: 25px;
 }
+
+.gameplay-content>button:hover{
+    background-color: white;
+    color: red;
+}
 .gameplay-video-container>video{
     height: 100%;
     width: 100%;
 }
 
 .gameplay-content{
-    padding: 8PX;
+    padding: 8px;
 }
 
 .gameplay-content>h1{
@@ -351,7 +356,7 @@ body{
 .your-agent-container > article{
     width: 45%;
     height: 90%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .your-agent-image-container>img{
@@ -359,4 +364,103 @@ body{
     width: 100%;
     object-fit: contain;
     object-position: center;
+}
+
+.your-agent-content > h1{
+    font-size: 80px;
+    font-family: fantasy;
+    margin-bottom: 16px;
+}
+
+.your-agent-content>div{
+    color: white;
+}
+.your-agent-content>p{
+    font-size: 14px;
+    color: #0f1923;
+    color: white;
+}
+
+.your-agent-content>button{
+    background-color: #2b2a29;
+    color: white;
+    padding: 18px 32px;
+    border: none;
+    margin-top: 25px;
+}
+
+.your-agent-content>button:hover{
+    background-color: white;
+    color:black;
+}
+
+.your-agent-content{
+    padding: 8px;
+    color: white;
+}
+
+.your-map-container{
+    height: 75vh;
+    width: 100%;
+    background-image: url("/assets/yourmap.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+}
+
+.your-map-container > article{
+    width: 45%;
+    height: 80%;
+    /* border: 2px solid black; */
+}
+
+.your-map-image-container>img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain;
+    object-position: center; */
+}
+
+.your-map-container>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.your-map-content{
+    padding: 8px;
+}
+
+.your-map-content > h1{
+    font-size: 80px;
+    font-family: fantasy;
+    margin-bottom: 16px;
+}
+
+.your-map-content > p{
+    font-size: 14px;
+    color: #0f1923;
+    color: black;
+}
+
+.your-map-content > button{
+    background-color:red;
+    color: white;
+    padding: 18px 32px;
+    border: none;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.your-map-content > button:hover{
+    background-color: white;
+    color:black;
+}
+
+.your-map-content > div{
+    font-size: 18px;
+    font-family: sans-serif;
 }
